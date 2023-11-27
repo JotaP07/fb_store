@@ -1633,6 +1633,7 @@ textarea:focus {
   top: -5px;
 }
 
+ 
 .account-icon {
   position: absolute;
   right: 60px;
@@ -1649,7 +1650,10 @@ textarea:focus {
   border-radius: 50%;
 }
 
-
+#IconShorts, #IconShoes {
+  color: #15132A;
+  
+}
 
 .account-icon a:hover {
   color: #fff;

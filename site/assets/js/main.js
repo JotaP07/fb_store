@@ -24,10 +24,10 @@
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
-            logo.src = 'assets/images/logo/logo-2.svg';
+            logo.src = '../fb_store/site/assets/images/logo/logo-2.svg';
         } else {
             header_navbar.classList.remove("sticky");
-            logo.src = 'assets/images/logo/logo.svg';
+            logo.src = '../fb_store/site/assets/images/logo/logo.svg';
         }
 
 
