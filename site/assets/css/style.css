@@ -1,23 +1,22 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: ClassiList
-    Author: GrayGrids
-
 -----------------------------------------------------------------------------------
 
     CSS INDEX
-    ===================
+  ===================
 
-    01. Theme default CSS
-	02. Header
-    03. Hero
-	04. Footer
+  1. Theme default CSS
+	2. Header
+  3. Hero
+	4. Footer
 
 -----------------------------------------------------------------------------------*/
 /*===========================
     01.COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Orbitron:wght@500&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -1800,14 +1799,12 @@ textarea:focus {
 }
 
 /*============================
-hero area css
+hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
 ============================= */
 .hero-area {
   background-image: url("../images/hero/hero-bg.jpg");
-  border-bottom: 2px solid #15132A;
   position: relative;
   z-index: 1;
-  margin-top: 65px;
 }
 
 .hero-area::after {
@@ -1820,47 +1817,93 @@ hero area css
   z-index: -1;
 }
 
+
+
 .hero-area .hero-content {
-  padding: 270px 0 260px;
+  padding: 135px 0 200px;
 }
+
+.bannerLogo{
+  overflow: hidden;
+  position: absolute;
+  width: 32%;
+  height: 100%;
+  margin-top: 130px;
+  margin-left: 990px;
+  z-index: 11111;
+}
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero-area .hero-content {
-    padding: 220px 0px 180px;
+    padding: 110px 0px 180px;
+  }
+
+  .bannerLogo{
+    margin-left: 840px;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1299px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .hero-area .hero-content {
-    padding: 220px 0px 180px;
+    padding: 130px 0px 180px;
+  }
+
+  .bannerLogo{
+    display: none;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area .hero-content {
-    padding: 220px 0px 180px;
+    padding: 180px 0px 190px;
   }
+  
+  .hero-area .hero-content h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .bannerLogo{
+    display: none;
+  }
+
+  
 }
-
-
 
 @media (max-width: 767px) {
   .hero-area .hero-content {
-    padding: 220px 0px 180px;
+    padding: 160px 0px 180px;
+  }
+  .bannerLogo{
+    display: none;
   }
 }
 
 .hero-area .hero-content h1 {
-  font-size: 55px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 60px;
   font-weight: 700;
   line-height: 65px;
   color: #fff;
+  color: transparent; 
+  -webkit-text-stroke: 0.1px #fff;
+  margin-top: -40px;
 }
 
 @media (max-width: 767px) {
   .hero-area .hero-content h1 {
     font-size: 42px;
     line-height: 52px;
+  }
+  .bannerLogo{
+    display: none;
   }
 }
 
@@ -1869,13 +1912,26 @@ hero area css
     font-size: 55px;
     line-height: 65px;
   }
+  .bannerLogo{
+    display: none;
+  }
 }
 
+
 .hero-area .hero-content p {
-  font-size: 18px;
-  line-height: 28px;
+  font-family: 'comfortaa', sans-serif;
+  font-size: 28px;
+  line-height: 38px;
   color: #fff;
   margin-bottom: 35px;
+  text-shadow: #15132A 2px 1px 3px;
+}
+
+#AvisoYellow{
+  margin-top: 50px;
+  font-size: 18px;
+  color: #fffc00;
+  text-shadow: #15132A 2px 1px 3px;
 }
 
 .search-area {
@@ -2212,7 +2268,7 @@ hero area css
 }
 
 .single-product:hover {
-  box-shadow: 0px 12px 35px rgba(218, 222, 228, 0.65);
+  box-shadow: 0px 12px 35px rgba(106, 106, 106, 0.65);
 }
 
 .single-product .product-img {
@@ -2246,13 +2302,13 @@ hero area css
   font-size: 14px;
 }
 
+
 .single-product .product-img .product-action a.share {
   background: #fff;
   color: #15132A;
 }
 
 .single-product .product-img a.badge {
-  font-size: 16px;
   color: #fff;
   background: #15132A;
   padding: 5px 16px;
@@ -2274,10 +2330,27 @@ hero area css
 
 .single-product .product-content .name {
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
-.single-product .product-content .name:hover a {
+
+.with-css {
+  width: 355px;
+}
+
+.with-css h3 {
   color: #15132A;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0; /* Remova a margem padrão do h3 para melhor visualização */
+  transition: all 0.5s ease-in-out;
+}
+
+
+.single-product .product-content .name:hover {
+  color: #828282;
+  transition: all 0.4s ease-out 0s;
 }
 
 .single-product .product-content .update {

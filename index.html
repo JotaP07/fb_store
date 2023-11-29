@@ -62,6 +62,15 @@
 
 	<!--====== PRELOADER PART ENDS ======-->
 
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+
 	<!--====== HEADER PART START ======-->
 
 	<header class="header_area">
@@ -73,8 +82,9 @@
 							<a class="navbar-brand" href="index.html">
 								<img id="logo" src="site\assets\images\logo\logo.svg" alt="Logo">
 							</a>
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
 								<span class="toggler-icon"></span>
 								<span class="toggler-icon"></span>
 								<span class="toggler-icon"></span>
@@ -85,8 +95,9 @@
 										<a class="page-scroll active" href="index.html">Início</a>
 									</li>
 									<li class="nav-item">
-										<a class="page-scroll" data-toggle="collapse" data-target="#sub-nav1" aria-controls="sub-nav1"
-											aria-expanded="false" aria-label="Toggle navigation" href="javascript:void(0)">Marcas
+										<a class="page-scroll" data-toggle="collapse" data-target="#sub-nav1"
+											aria-controls="sub-nav1" aria-expanded="false"
+											aria-label="Toggle navigation" href="javascript:void(0)">Marcas
 											<div class="sub-nav-toggler">
 												<span></span>
 											</div>
@@ -99,8 +110,9 @@
 										</ul>
 									</li>
 									<li class="nav-item">
-										<a class="page-scroll" data-toggle="collapse" data-target="#sub-nav" aria-controls="sub-nav"
-											aria-expanded="false" aria-label="Toggle navigation" href="javascript:void(0)">Produtos
+										<a class="page-scroll" data-toggle="collapse" data-target="#sub-nav"
+											aria-controls="sub-nav" aria-expanded="false" aria-label="Toggle navigation"
+											href="javascript:void(0)">Produtos
 											<div class="sub-nav-toggler">
 												<span></span>
 											</div>
@@ -144,18 +156,53 @@
 	<!--====== HEADER PART ENDS ======-->
 
 	<!--====== HERO PART START ======-->
-	<section id="Início" class="hero-area bg_cover">
-		<div class="container">
-			<div class="row">
-				<div class="mx-auto col-lg-9 col-xl-9 col-md-10">
-					<div class="text-center hero-content">
+	<div class="bannerLogo	 wow slideInRight" data-wow-delay=".2s" id="logoContainer">
+		<img src="site/assets/images/LgoAtt.png" id="bannerLogo" alt="Logo">
+	  </div>
 
+	<section id="home" class="hero-area bg_cover">
+		<div class="container ml-4">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="text-start hero-content">
+						<h1 id="typed-title" class="mb-30 wow fadeInUp" data-wow-delay=".2s"></h1>
+
+						<script>
+						  // Inicializa o Typed.js quando o documento estiver pronto
+						  $(document).ready(function() {
+							// Configuração do Typed.js
+							var options = {
+							  strings: ["Famous Brands Store"],
+							  typeSpeed: 50,
+							  backSpeed: 20, 
+							  backDelay: 1000, 
+							  startDelay: 500, 
+							  showCursor: false,
+							};
+						
+							// Inicializa o Typed.js no elemento com o ID "typed-title"
+							var typed = new Typed("#typed-title", options);
+						  });
+						</script>
+						
+						<p class="wow fadeInUp" data-wow-delay=".4s">Descontos Exclusivos!<br>
+							As Melhores Marcas por Menos.
+						</p>
+
+						<a href="/" rel="nofollow" style="border: 2px solid #fff; box-shadow: #15132A 2px 1px 5px;" class="main-btn btn-hover mt-5">Confira as novas Ofertas!</a>
+						<p class="wow fadeInUp" data-wow-delay=".4s" id="AvisoYellow">Nossas ofertas redirecionam para os sites oficiais
+							das marcas. <br> <strong>Compre com confiança!</strong> </p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
+
+
 	<!--====== HERO PART END ======-->
+
 
 	<!--====== SEARCH PART START ======-->
 	<div class="search-area">
@@ -179,7 +226,7 @@
 									<option value="none">Shorts</option>
 									<option value="none">Outros</option>
 								</select>
-								
+
 							</div>
 						</div>
 						<div class="col-lg-3 col-sm-5 col-10">
@@ -208,64 +255,69 @@
 	<!--====== CATEGORY LIST PART START ======-->
 	<section class="category-list-area pt-130">
 		<div class="container">
-		  <div class="category-list-wrapper">
-			<div class="category-list-item">
-			  <a href="category.html">
-				<div class="icon">
-				  <i class="lni lni-tshirt"></i>
+			<div class="category-list-wrapper">
+				<div class="category-list-item">
+					<a href="category.html">
+						<div class="icon">
+							<i class="lni lni-tshirt"></i>
+						</div>
+						<h3>Camisetas</h3>
+					</a>
 				</div>
-				<h3>Camisetas</h3>
-			  </a>
-			</div>
-			<div class="category-list-item">
-				<a href="category.html" onmouseover="changeIconColor('IconShorts')" onmouseout="restoreIconColor('IconShorts')">
-				  <div class="icon">
-					<img width="35" id="IconShorts" height="35" src="https://img.icons8.com/windows/32/swimming-shorts.png" alt="swimming-shorts"/>
-				  </div>
-				  <h3>Shorts</h3>
-				</a>
-			  </div>
-			  
-			  <div class="category-list-item">
-				<a href="category.html" onmouseover="changeIconColor('IconShoes')" onmouseout="restoreIconColor('IconShoes')">
-				  <div class="icon">
-					<img width="35" height="35" id="IconShoes" src="https://img.icons8.com/pastel-glyph/64/sneakers--v5.png" alt="sneakers--v5"/>
-				  </div>
-				  <h3>Tênis</h3>
-				</a>
-			  </div>
-			  <script>
-				function changeIconColor(iconId) {
-				  var icon = document.getElementById(iconId);
-				  icon.style.filter = "brightness(0) invert(1)";
-				}
-			  
-				function restoreIconColor(iconId) {
-				  var icon = document.getElementById(iconId);
-				  icon.style.filter = "none";
-				}
-			  </script>
-			  
-			<div class="category-list-item">
-			  <a href="category.html">
-				<div class="icon">
-				  <i class="lni lni-flickr"></i>
+				<div class="category-list-item">
+					<a href="category.html" onmouseover="changeIconColor('IconShorts')"
+						onmouseout="restoreIconColor('IconShorts')">
+						<div class="icon">
+							<img width="35" id="IconShorts" height="35"
+								src="https://img.icons8.com/windows/32/swimming-shorts.png" alt="swimming-shorts" />
+						</div>
+						<h3>Shorts</h3>
+					</a>
 				</div>
-				<h3>Outros</h3>
-			  </a>
-			</div>
-			<div class="category-list-item">
-			  <a href="category.html">
-				<div class="icon">
-				  <i class="lni lni-star"></i>
+
+				<div class="category-list-item">
+					<a href="category.html" onmouseover="changeIconColor('IconShoes')"
+						onmouseout="restoreIconColor('IconShoes')">
+						<div class="icon">
+							<img width="35" height="35" id="IconShoes"
+								src="https://img.icons8.com/pastel-glyph/64/sneakers--v5.png" alt="sneakers--v5" />
+						</div>
+						<h3>Tênis</h3>
+					</a>
 				</div>
-				<h3>Favoritos</h3>
-			  </a>
+				<script>
+					function changeIconColor(iconId) {
+						var icon = document.getElementById(iconId);
+						icon.style.filter = "brightness(0) invert(1)";
+					}
+
+					function restoreIconColor(iconId) {
+						var icon = document.getElementById(iconId);
+						icon.style.filter = "none";
+					}
+				</script>
+
+				<div class="category-list-item">
+					<a href="category.html">
+						<div class="icon">
+							<i class="lni lni-flickr"></i>
+						</div>
+						<h3>Outros</h3>
+					</a>
+				</div>
+				<div class="category-list-item">
+					<a href="category.html">
+						<div class="icon">
+							<i class="lni lni-star"></i>
+						</div>
+						<h3>Favoritos</h3>
+					</a>
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </section>
-	  
+	</section>
+
+
 	<!--====== CATEGORY LIST PART END ======-->
 
 	<!--====== LATEST PRODUCT PART START ======-->
@@ -274,14 +326,15 @@
 			<div class="row">
 				<div class="mx-auto col-xl-6 col-lg-7 col-md-10">
 					<div class="text-center section-title mb-60">
-						<h1>Confira nossas Últimas Ofertas</h1>	
-						<p>Renovamos constantemente nossas ofertas para garantir que você aproveite o melhor em todos os momentos. Não perca tempo, descubra as ofertas que temos para você hoje!.</p>
+						<h1>Confira nossas Últimas Ofertas</h1>
+						<p>Renovamos constantemente nossas ofertas para garantir que você aproveite o melhor em todos os
+							momentos. Não perca tempo, descubra as ofertas que temos para você hoje!.</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				
+
 				<div class="col-xl-4 col-lg-6 col-md-6">
 					<div class="single-product">
 						<div class="product-img">
@@ -295,7 +348,13 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">Tênis Nike Quest 5 Masculino</a></h3>
+							<a href="product-details.html">
+								<div class="with-css">
+									<h3 class="name">
+										Tênis Nike Quest 5 Masculino
+									</h3>
+								</div>
+							</a>
 							<span class="update">Last Update: 1 hours ago</span>
 							<ul class="address">
 								<li>
@@ -331,7 +390,13 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">Tênis Nike SuperRep Go 3 Flyknit Next Nature Feminino</a></h3>
+							<a href="product-details.html">
+								<div class="with-css">
+									<h3 class="name">
+										Tênis Nike SuperRep Go 3 Flyknit Next Nature Feminino
+									</h3>
+								</div>
+							</a>
 							<span class="update">Last Update: 5 hours ago</span>
 							<ul class="address">
 								<li>
@@ -349,7 +414,8 @@
 							</ul>
 							<div class="product-bottom">
 								<h3 class="price">$420.99</h3>
-								<a href="javascript:void(0)" class="link-ad"><i class="lni lni-checkmark-circle"></i> Verified Ad</a>
+								<a href="javascript:void(0)" class="link-ad"><i class="lni lni-checkmark-circle"></i>
+									Verified Ad</a>
 							</div>
 						</div>
 					</div>
@@ -368,7 +434,13 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">Regata Nike Brooklyn Nets Icon Edition 2022/23 Masculina</a></h3>
+							<a href="product-details.html">
+								<div class="with-css">
+									<h3 class="name">
+										Regata Nike Brooklyn Nets Icon Edition 2022/23 Masculina
+									</h3>
+								</div>
+							</a>
 							<span class="update">Last Update: 5 hours ago</span>
 							<ul class="address">
 								<li>
@@ -395,7 +467,8 @@
 					<div class="single-product">
 						<div class="product-img">
 							<a href="product-details.html">
-								<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b6b874049f0a41888be4afc300983268_9366/Calca_Adicolor_Classics_SST_Bege_IM4544_21_model.jpg" alt="">
+								<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b6b874049f0a41888be4afc300983268_9366/Calca_Adicolor_Classics_SST_Bege_IM4544_21_model.jpg"
+									alt="">
 							</a>
 							<div class="product-action">
 								<a href="javascript:void(0)"><i class="lni lni-heart"></i></a>
@@ -404,8 +477,13 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">CALÇA ADICOLOR CLASSICS SSTc</a></h3>
-							<span class="update">Last Update: 5 hours ago</span>
+							<a href="product-details.html">
+								<div class="with-css">
+									<h3 class="name">
+										CALÇA ADICOLOR CLASSICS SSTc
+									</h3>
+								</div>
+							</a> <span class="update">Last Update: 5 hours ago</span>
 							<ul class="address">
 								<li>
 									<a href="javascript:void(0)"><i class="lni lni-calendar"></i> 20 June, 2023</a>
@@ -422,7 +500,8 @@
 							</ul>
 							<div class="product-bottom">
 								<h3 class="price">$3000.99</h3>
-								<a href="javascript:void(0)" class="link-ad"><i class="lni lni-checkmark-circle"></i> Verified Ad</a>
+								<a href="javascript:void(0)" class="link-ad"><i class="lni lni-checkmark-circle"></i>
+									Verified Ad</a>
 							</div>
 						</div>
 					</div>
@@ -432,7 +511,8 @@
 					<div class="single-product">
 						<div class="product-img">
 							<a href="product-details.html">
-								<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/757afdb5be504c3da627aefd00c8235e_9366/Legging_Tonal_Adicolor_Classics_3-Stripes_Preto_IB7391_21_model.jpg" alt="">
+								<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/757afdb5be504c3da627aefd00c8235e_9366/Legging_Tonal_Adicolor_Classics_3-Stripes_Preto_IB7391_21_model.jpg"
+									alt="">
 							</a>
 							<div class="product-action">
 								<a href="javascript:void(0)"><i class="lni lni-heart"></i></a>
@@ -441,7 +521,13 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">LEGGING TONAL ADICOLOR CLASSICS 3-STRIPES</a></h3>
+							<a href="product-details.html">
+								<div class="with-css">
+									<h3 class="name">
+										LEGGING TONAL ADICOLOR CLASSICS
+									</h3>
+								</div>
+							</a>
 							<span class="update">Last Update: 5 hours ago</span>
 							<ul class="address">
 								<li>
@@ -468,10 +554,12 @@
 					<div class="single-product">
 						<div class="product-img">
 							<a href="product-details.html">
-								<video width="100%" height="auto"  controls autoplay loop>
-									<source src="https://assets.adidas.com/videos/ar_1,w_720,c_fill,q_auto,f_auto/b0ee68a1f43f433ea127e807ece82347_d98c/Chinelo_Adilette_22_Vermelho_IG7492_video.mp4" type="video/mp4">
+								<video width="100%" height="auto" controls autoplay loop>
+									<source
+										src="https://assets.adidas.com/videos/ar_1,w_720,c_fill,q_auto,f_auto/b0ee68a1f43f433ea127e807ece82347_d98c/Chinelo_Adilette_22_Vermelho_IG7492_video.mp4"
+										type="video/mp4">
 									Seu navegador não suporta o elemento de vídeo.
-								  </video>							</a>
+								</video> </a>
 							<div class="product-action">
 								<a href="javascript:void(0)"><i class="lni lni-heart"></i></a>
 								<a href="javascript:void(0)" class="share"><i class="lni lni-share"></i></a>
@@ -479,7 +567,13 @@
 						</div>
 
 						<div class="product-content">
-							<h3 class="name"><a href="product-details.html">10 Future Concept Cars</a></h3>
+							<a href="product-details.html">
+								<div class="with-css">
+									<h3 class="name">
+										CHINELO ADILETTE 22
+									</h3>
+								</div>
+							</a>
 							<span class="update">Last Update: 5 hours ago</span>
 							<ul class="address">
 								<li>
@@ -497,7 +591,8 @@
 							</ul>
 							<div class="product-bottom">
 								<h3 class="price">$4520.99</h3>
-								<a href="javascript:void(0)" class="link-ad"><i class="lni lni-checkmark-circle"></i> Verified Ad</a>
+								<a href="javascript:void(0)" class="link-ad"><i class="lni lni-checkmark-circle"></i>
+									Verified Ad</a>
 							</div>
 						</div>
 					</div>
@@ -526,7 +621,8 @@
 					<div class="col-lg-4 col-sm-6">
 						<div class="single-counter">
 							<div class="icon">
-								<a href="https://www.facebook.com/famousbrandsstoree/" target="_blank"><i class="lni lni-facebook-filled"></i>
+								<a href="https://www.facebook.com/famousbrandsstoree/" target="_blank"><i
+										class="lni lni-facebook-filled"></i>
 							</div>
 							<span class="count">Facebook</span></a>
 						</div>
@@ -536,18 +632,20 @@
 					<div class="col-lg-4 col-sm-6">
 						<div class="single-counter">
 							<div class="icon">
-								<a href="https://www.facebook.com/famousbrandsstoree/" target="_blank"><i class="lni lni-telegram"></i>
-								</div>
-								<span class="count">Telegram</span></a>
+								<a href="https://www.facebook.com/famousbrandsstoree/" target="_blank"><i
+										class="lni lni-telegram"></i>
+							</div>
+							<span class="count">Telegram</span></a>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-sm-6">
 						<div class="single-counter">
 							<div class="icon">
-								<a href="https://www.instagram.com/famousbrands.store/" target="_blank"><i class="lni lni-instagram"></i>
-								</div>
-								<span class="count">Instagram</span></a>
+								<a href="https://www.instagram.com/famousbrands.store/" target="_blank"><i
+										class="lni lni-instagram"></i>
+							</div>
+							<span class="count">Instagram</span></a>
 						</div>
 					</div>
 				</div>
@@ -662,7 +760,7 @@
 
 			<div class="product-carousel-wrapper-active">
 				<div class="row feature-product-carousel">
-				
+
 					<div class="col-lg-4 col-md-6">
 						<div class="single-product">
 							<div class="product-img">
@@ -670,17 +768,18 @@
 								<img src="site\assets\images\product\l-product-1.jpg" alt="">
 							</div>
 							<div class="product-content">
-								<h5 class="price theme-color">ADIDAS</h5>							</div>
+								<h5 class="price theme-color">ADIDAS</h5>
+							</div>
 						</div>
 					</div>
-				
+
 					<div class="col-lg-4 col-md-6">
 						<div class="single-product">
 							<div class="product-img">
 								<a href="javascript:void(0)" class="badge">Poucos dias pro Fim</a>
 								<img src="site\assets\images\product\l-product-2.jpg" alt="">
 							</div>
-				
+
 							<div class="product-content">
 								<div class="rating-wrapper">
 									<h5 class="price theme-color">NIKE</h5>
@@ -688,14 +787,15 @@
 							</div>
 						</div>
 					</div>
-				
+
 					<div class="col-lg-4 col-md-6">
 						<div class="single-product">
 							<div class="product-img">
 								<a href="javascript:void(0)" class="badge bottom">20% OFF</a>
-								<img src="https://br.puma.com/media/contentmanager/content/FULLBLEED_BF_CYBERDAYS_DESKTOP_1440x500_1.jpg" alt="">
+								<img src="https://br.puma.com/media/contentmanager/content/FULLBLEED_BF_CYBERDAYS_DESKTOP_1440x500_1.jpg"
+									alt="">
 							</div>
-				
+
 							<div class="product-content">
 								<div class="rating-wrapper">
 									<!--<h5 class="price theme-color">$90 <del>$120</del></h5>-->
@@ -704,8 +804,8 @@
 							</div>
 						</div>
 					</div>
-	
-				
+
+
 				</div>
 			</div>
 		</div>
@@ -796,7 +896,8 @@
 					<div class="col-lg-7">
 						<div class="subscribe-content section-title">
 							<h1 class="text-white">Inscreva-se pra não Perder Nenhuma Oferta!</h1>
-							<p class="text-white">Não fique de fora das melhores ofertas! Mantenha-se atualizado e aproveite os descontos que preparamos especialmente para você.</p>
+							<p class="text-white">Não fique de fora das melhores ofertas! Mantenha-se atualizado e
+								aproveite os descontos que preparamos especialmente para você.</p>
 						</div>
 					</div>
 					<div class="col-lg-5">
@@ -834,11 +935,14 @@
 							<a href="index.html" class="d-inline-block mb-30">
 								<img src="../fb_store/site/assets/images/logo/logo.svg" alt="">
 							</a>
-							<p class="text-white mb-25">Siga-nos nas redes sociais para uma jornada ainda mais envolvente. Seja parte da comunidade!</p>
+							<p class="text-white mb-25">Siga-nos nas redes sociais para uma jornada ainda mais
+								envolvente. Seja parte da comunidade!</p>
 							<ul class="social">
-								<li><a href="https://www.facebook.com/famousbrandsstoree/"><i class="lni lni-facebook-filled"></i></a></li>
+								<li><a href="https://www.facebook.com/famousbrandsstoree/"><i
+											class="lni lni-facebook-filled"></i></a></li>
 								<li><a href="javascript:void(0)"><i class="lni lni-telegram"></i></a></li>
-								<li><a href="https://www.instagram.com/famousbrands.store/"><i class="lni lni-instagram-filled"></i></a></li>
+								<li><a href="https://www.instagram.com/famousbrands.store/"><i
+											class="lni lni-instagram-filled"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -929,7 +1033,7 @@
 
 	<!--====== glightbox js ======-->
 	<script src="site\assets\js\glightbox.min.js"></script>
-	
+
 	<!--====== Selectr js ======-->
 	<script src="site\assets\js\selectr.min.js"></script>
 
@@ -960,7 +1064,7 @@
 			controls: true,
 			controlsPosition: 'bottom',
 			controlsText: [
-				'<span class="prev"><i class="lni lni-chevron-left"></i></span>', 
+				'<span class="prev"><i class="lni lni-chevron-left"></i></span>',
 				'<span class="next"><i class="lni lni-chevron-right"></i></span>'
 			],
 			container: ".feature-product-carousel",
