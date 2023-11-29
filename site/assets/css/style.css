@@ -1893,7 +1893,7 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
   line-height: 65px;
   color: #fff;
   color: transparent; 
-  -webkit-text-stroke: 0.1px #fff;
+  -webkit-text-stroke: 1px #fff;
   margin-top: -40px;
 }
 
@@ -1924,14 +1924,12 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
   line-height: 38px;
   color: #fff;
   margin-bottom: 35px;
-  text-shadow: #15132A 2px 1px 3px;
 }
 
 #AvisoYellow{
   margin-top: 50px;
   font-size: 18px;
   color: #fffc00;
-  text-shadow: #15132A 2px 1px 3px;
 }
 
 .search-area {
