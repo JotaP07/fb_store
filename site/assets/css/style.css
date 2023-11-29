@@ -39,6 +39,13 @@ img {
   max-width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+
+  #bannerSocialMedia {
+    display: none;  
+  }
+}
+
 a:focus,
 input:focus,
 textarea:focus,
@@ -206,6 +213,7 @@ textarea:focus {
   font-size: 20px;
   color: #fff;
   border-radius: 5px;
+  border: 1px solid #ffffff;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -1818,21 +1826,23 @@ hero area css
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero-area .hero-content {
-    padding: 200px 0px 180px;
+    padding: 220px 0px 180px;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1299px) {
   .hero-area .hero-content {
     padding: 220px 0px 180px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .hero-area .hero-content {
     padding: 220px 0px 180px;
   }
 }
+
+
 
 @media (max-width: 767px) {
   .hero-area .hero-content {
@@ -2028,6 +2038,8 @@ hero area css
   .category-area .category-top .right-wrapper .product-view-btns {
     margin-right: 20px;
   }
+
+
 }
 
 @media (max-width: 767px) {
@@ -2064,6 +2076,10 @@ hero area css
     margin-top: 30px;
     max-width: calc(100% - 94px);
   }
+  .search-area{
+    margin-left: 0px;
+  
+  }
 }
 
 .category-area .category-top .right-wrapper form input {
@@ -2081,11 +2097,22 @@ hero area css
   background: none;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .category-area .category-wrapper .left-wrapper .single-product .product-content {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+ 
+.search-area
+{
+  margin-left: -23px;
+}
+.category-area .category-top .right-wrapper form {
+  margin: auto;
+  margin-top: 30px;
+  max-width: calc(100% - 94px);
+}
+
+.main-btn {
+  font-size: 13.5px;
+  padding: 10px 30px;  
+}
 }
 
 .category-area .category-wrapper .sidebar-wrapper .price-range .price-amount {
@@ -2814,10 +2841,26 @@ Service css
   font-weight: 400;
 }
 
+
+
 .subscribe-area .subscribe-wrapper {
   background-image: url("../images/subscribe/subscribe-bg.svg");
   padding: 65px 50px 35px;
 }
+@media screen and (max-width: 767px) {
+  .subscribe-area .subscribe-wrapper .subscribe-form button  .subscribe-form-wrapper {
+    padding: 30px 20px; /* Ajuste o padding conforme necessário para telas menores */
+  }
+
+  .subscribe-content h1 {
+    font-size: 24px; /* Ajuste o tamanho da fonte do título conforme necessário */
+  }
+
+  .subscribe-content p {
+    font-size: 12px; /* Ajuste o tamanho da fonte do parágrafo conforme necessário */
+  }
+}
+
 
 .subscribe-area .subscribe-wrapper .subscribe-content {
   margin-bottom: 30px;
