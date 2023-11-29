@@ -1805,6 +1805,7 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
   background-image: url("../images/hero/hero-bg.jpg");
   position: relative;
   z-index: 1;
+  
 }
 
 .hero-area::after {
@@ -1820,7 +1821,7 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
 
 
 .hero-area .hero-content {
-  padding: 135px 0 200px;
+  padding: 155px 0 120px;
 }
 
 .bannerLogo{
@@ -1841,8 +1842,9 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
   .hero-area .hero-content {
-    padding: 110px 0px 180px;
+    padding: 110px 0px 140px;
   }
 
   .bannerLogo{
@@ -1851,6 +1853,24 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .hero-area {
+    background-image: url("../images/hero/hero-bg.jpg");
+    position: relative;
+    z-index: 1;
+    
+  }
+  .hero-area::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -11 ;
+    background: linear-gradient(rgba(0, 0, 0, 0.296) 0%, #15132a5b 60%);
+  }
+  
+  
   .hero-area .hero-content {
     padding: 130px 0px 180px;
   }
@@ -1861,9 +1881,27 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-area {
+    background-image: url("../images/hero/hero-bg.jpg");
+    position: relative;
+    z-index: 1;
+    
+  }
+  .hero-area::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -11 ;
+    background: linear-gradient(rgba(0, 0, 0, 0.296) 0%, #15132a5b 60%);
+  }
+
   .hero-area .hero-content {
     padding: 180px 0px 190px;
   }
+  
   
   .hero-area .hero-content h1 {
     font-size: 42px;
@@ -1878,6 +1916,23 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
 }
 
 @media (max-width: 767px) {
+  .hero-area {
+    background-image: url("../images/hero/hero-bg.jpg");
+    position: relative;
+    z-index: 1;
+    
+  }
+  .hero-area::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -11 ;
+    background: linear-gradient(rgba(0, 0, 0, 0.296) 0%, #15132a5b 60%);
+  }
+
   .hero-area .hero-content {
     padding: 160px 0px 180px;
   }
@@ -1898,6 +1953,22 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
 }
 
 @media (max-width: 767px) {
+  .hero-area {
+    background-image: url("../images/hero/hero-bg.jpg");
+    position: relative;
+    z-index: 1;
+    
+  }
+  .hero-area::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -11 ;
+    background: linear-gradient(rgba(0, 0, 0, 0.296) 0%, #15132ad5 60%);
+  }
   .hero-area .hero-content h1 {
     font-size: 42px;
     line-height: 52px;
@@ -1908,6 +1979,22 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .hero-area {
+    background-image: url("../images/hero/hero-bg.jpg");
+    position: relative;
+    z-index: 1;
+    
+  }
+  .hero-area::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -11 ;
+    background: linear-gradient(rgba(0, 0, 0, 0.296) 0%, #15132a5b 60%);
+  }
   .hero-area .hero-content h1 {
     font-size: 55px;
     line-height: 65px;
@@ -1931,6 +2018,7 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
   font-size: 18px;
   color: #fffc00;
 }
+
 
 .search-area {
   margin-top: -55px;
