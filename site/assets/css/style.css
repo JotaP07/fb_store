@@ -38,10 +38,18 @@ img {
   max-width: 100%;
 }
 
+#bannerSocialMediaCel {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
 
   #bannerSocialMedia {
     display: none;  
+  }
+
+  #bannerSocialMediaCel {
+    display: block;
   }
 }
 
@@ -1298,7 +1306,7 @@ textarea:focus {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #b1b1b1;
     max-height: 300px;
     overflow-y: auto;
     z-index: 9;
@@ -1313,7 +1321,7 @@ textarea:focus {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #b1b1b1;
     max-height: 300px;
     overflow-y: auto;
     z-index: 9;
@@ -1408,12 +1416,20 @@ textarea:focus {
     padding: 6px 0;
     color: #15132A;
   }
+
+  .navbar-nav .nav-item a.active {
+    color: #15132A;
+    font-weight: bolder;
+  }
+  
+
 }
 
 .navbar-nav .nav-item a.active {
   color: #15132A;
   font-weight: bolder;
 }
+
 
 .navbar-nav .nav-item a.active::after {
   width: 100%;
@@ -1729,16 +1745,15 @@ textarea:focus {
   .header-btn .main-btn.account-btn {
     padding: 10px 14px;
   }
+
 }
-
-
 
 .sticky .navbar-toggler .toggler-icon {
   background-color: #ffffff;
 }
 
 .sticky .navbar-nav .nav-item a {
-  color: #15132A;
+  color: #ffffff;
 }
 
 .sticky .navbar-nav .nav-item a::before {
@@ -1746,7 +1761,7 @@ textarea:focus {
 }
 
 .sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
-  color: #15132A;
+  color: #ffffff;
 }
 
 .sticky .navbar-nav .nav-item a.header-btn {
@@ -3210,6 +3225,8 @@ video css
   z-index: 9999;
   margin-top: -80px;
 }
+
+
 
 .count-up-wrapper .single-counter {
   text-align: center;
