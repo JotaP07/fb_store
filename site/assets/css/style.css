@@ -1265,12 +1265,14 @@ textarea:focus {
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: #fff;
+  background-color: #15132A;
   display: block;
   margin: 5px 0;
   position: relative;
   transition: all 0.3s ease-out 0s;
 }
+
+
 
 .navbar-toggler.active .toggler-icon:nth-of-type(1) {
   transform: rotate(45deg);
@@ -1622,7 +1624,7 @@ textarea:focus {
     right: 0;
     top: 0;
     background: none;
-    color: #222;
+    color: white; /* Nova cor para telas menores */
     font-size: 18px;
     border: 0;
     width: 30px;
@@ -1732,11 +1734,11 @@ textarea:focus {
 
 
 .sticky .navbar-toggler .toggler-icon {
-  background-color: #15132A;
+  background-color: #ffffff;
 }
 
 .sticky .navbar-nav .nav-item a {
-  color: #ffffff;
+  color: #15132A;
 }
 
 .sticky .navbar-nav .nav-item a::before {
@@ -1744,7 +1746,7 @@ textarea:focus {
 }
 
 .sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
-  color: #ffffff;
+  color: #15132A;
 }
 
 .sticky .navbar-nav .nav-item a.header-btn {
@@ -1959,7 +1961,7 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
     z-index: 1;
     
   }
-  .hero-area::after {
+  .hero-area::after { 
     content: '';
     position: absolute;
     width: 100%;
