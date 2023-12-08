@@ -24,10 +24,8 @@
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
-            logo.src = "site/assets/images/logo/logo-2.svg";
         } else {
             header_navbar.classList.remove("sticky");
-            logo.src = "site/assets/images/logo/logo.svg";
         }
 
 

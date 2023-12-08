@@ -1835,8 +1835,6 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
   z-index: -1;
 }
 
-
-
 .hero-area .hero-content {
   padding: 155px 0 120px;
 }
@@ -1850,13 +1848,6 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
   margin-left: 990px;
   z-index: 11;
 }
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 
@@ -3260,10 +3251,11 @@ video css
 .banner-area {
   position: relative;
   z-index: 1;
-  padding: 200px 0 130px;
-  background-image: url("../images/banner/banner-bg.jpg");
+  padding: 220px 0 130px;
+  background-image: url("/fb_store/site/assets/images/hero/hero-bg.jpg");
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+  background-size: cover;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3292,7 +3284,7 @@ video css
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: linear-gradient(rgba(51, 63, 87, 0.79) 0%, #15132A 100%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 2%, #15132A 90%);
 }
 
 .banner-area .banner-content h1 {
