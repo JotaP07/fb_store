@@ -1848,7 +1848,7 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
   height: 100%;
   margin-top: 130px;
   margin-left: 990px;
-  z-index: 11111;
+  z-index: 11;
 }
 
 
@@ -3226,11 +3226,18 @@ video css
   margin-top: -80px;
 }
 
+.count-up-wrapper .single-counter:hover{
+  background: #bebebe;
+  transition: all 0.3s ease-in 0s;
+  border-radius: 5px;
+
+}
 
 
 .count-up-wrapper .single-counter {
   text-align: center;
   padding: 35px 10px;
+  transition: all 0.3s ease-out 0s;
 }
 
 .count-up-wrapper .single-counter .icon {
@@ -4078,7 +4085,7 @@ footer css
 }
 
 .footer-area .widget-wrapper .footer-widget ul a:hover {
-  color: #15132A;
+  color: #a6a6a6;
 }
 
 .footer-area .widget-wrapper .footer-widget ul.social {
@@ -4106,8 +4113,8 @@ footer css
 }
 
 .footer-area .widget-wrapper .footer-widget ul.social li a:hover {
-  background: #15132A;
-  color: #fff;
+  background: #bebebe;
+  color: #15132A;
   box-shadow: drop-shadow(0px 5px 15px rgba(255, 107, 107, 0.3));
 }
 
@@ -4141,6 +4148,6 @@ footer css
 }
 
 
-#logo {
+#logo { /*logo do nav-bar*/
   width: 70%;
 }
