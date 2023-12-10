@@ -38,6 +38,17 @@ img {
   max-width: 100%;
 }
 
+
+#bannerLogo {
+  transition: transform 0.3s ease-in-out;
+}
+
+#bannerLogo:hover {
+  transform: translateY(-5px); 
+}
+
+
+
 #bannerSocialMediaCel {
   display: none;
 }
@@ -2558,6 +2569,14 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
   object-fit: cover;
 }
 
+
+.all-sites-area li {
+  margin-bottom: 20px;
+}
+
+
+
+
 .single-product.list-view .product-content {
   width: 100%;
 }
@@ -2608,6 +2627,22 @@ hero area css       Novo Square,Smooch Sans, Comfortaa, orbitron
 .product-carousel-wrapper .tns-controls button span.next {
   right: -28px;
   left: auto;
+}
+
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info img {
+  width: 20%;
+}
+
+.product-info span {
+  width: 80%;
+  text-align: right;
 }
 
 @media (max-width: 767px) {
@@ -4142,4 +4177,17 @@ footer css
 
 #logo { /*logo do nav-bar*/
   width: 70%;
+}
+
+
+
+
+.price-without-promotion{
+  color: #9f9f9f;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.campanhas{
+  cursor: pointer;
 }

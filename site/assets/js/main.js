@@ -59,3 +59,29 @@
 
 
 })();
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Data de início (pode ser obtida do servidor ou ser fixa)
+    const dataInicio = new Date();
+  
+    // Função para atualizar a tag span
+    function atualizarTempoDesdeUltimaAtualizacao() {
+      const agora = new Date();
+      const diferencaEmMilissegundos = agora - dataInicio;
+      const diferencaEmHoras = diferencaEmMilissegundos / (1000 * 60 * 60);
+  
+      // Arredonda para a hora mais próxima
+      const horasAtras = Math.round(diferencaEmHoras);
+  
+      const spanUpdate = document.getElementById("lastUpdate");
+      spanUpdate.textContent = `Atualizado há ${horasAtras} ${horasAtras === 1 ? 'hora' : 'horas'} atrás`;
+    }
+  
+    // Atualiza a cada minuto (pode ajustar conforme necessário)
+    setInterval(atualizarTempoDesdeUltimaAtualizacao, 60000);
+  
+    // Atualiza inicialmente
+    atualizarTempoDesdeUltimaAtualizacao();
+  });
+  
